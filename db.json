@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "firstname": "shubhanshi",
+      "email": "shubhanshi@gmail.com",
+      "address": "abc",
+      "password": "1234",
+      "lastname": "verma",
+      "phone_number": 7054511817,
+      "confirm_password": "1234",
+      "id": 3
+    },
+    {
+      "firstname": "shubhanshi",
+      "email": "shubhanshi@gmail.com",
+      "address": "abc",
+      "password": "1234",
+      "lastname": "verma",
+      "phone_number": 7054511817,
+      "confirm_password": "1234",
+      "id": 4
+    },
+    {
+      "firstname": "Shubhanshihjresgeiuwghnek",
+      "email": "s@g.c",
+      "address": "dshufgewubcerufb",
+      "phone_number": 9847586954,
+      "brief": "dfhewhjb",
+      "password": "1234",
+      "lastname": "Verma",
+      "id": 5
+    }
+  ],
+  "bookings": [
+    {
+      "dateTime": " 4 Apr 2019,09:00am",
+      "traveller": "Shubhanshi",
+      "address": " 231 sector 18 Panchkula",
+      "status": "STARTED",
+      "upcoming": true,
+      "past": false
+    },
+    {
+      "dateTime": " 4 Apr 2019,09:00am",
+      "traveller": "Shubhanshi",
+      "address": " 231 sector 18 Panchkula",
+      "status": "PENDING",
+      "upcoming": true,
+      "past": false
+    },
+    {
+      "dateTime": " 4 Apr 2019,09:00am",
+      "traveller": "Shubhanshi",
+      "address": " 231 sector 18 Panchkula",
+      "status": "ON THE WAY",
+      "upcoming": true,
+      "past": false
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "status": true,
+      "ques": "UAV’s AS DELIVERY MEDIUM",
+      "ans": "'A special Delivery' Humans have always been fascinated by flight, even long before technology metamorphosed."
+    },
+    {
+      "id": 2,
+      "status": true,
+      "ques": "Display Your Website and Apps in ‘Thin Air’",
+      "ans": "Innovation is constant at JungleWorks. Yelo scientists have figured out how to manipulate nearly unseen specks in the air and use them to create 3-D"
+    },
+    {
+      "id": 3,
+      "status": true,
+      "ques": "Meet us at JungleHunt, Dubai",
+      "ans": "Will Investors Fund My Startup Idea? The recipe for a successful business: one new idea, strong enthusiasm, and seed capital."
+    }
+  ]
+}

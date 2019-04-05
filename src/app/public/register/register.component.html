@@ -1,0 +1,90 @@
+<div class="container">
+  <h2>REGISTER</h2>
+  <hr>
+  <form [formGroup]="form" (ngSubmit)="onRegister(form.value)">
+    <div class="row">
+      <div class="col-md-6">
+        <label for="firstname">FIRST NAME</label>
+        <div *ngIf="form.get('firstname').errors && (form.get('firstname').dirty || form.get('firstname').touched)"
+          class="text-danger">
+          <div *ngIf="form.get('firstname').errors.required">
+            first name is required.
+          </div>
+        </div>
+        <input type="text" name="firstname" class="form-control" formControlName="firstname" autocomplete="off">
+        <br>
+        <label for="email">EMAIL ADDRESS</label>
+        <div *ngIf="form.get('email').errors && (form.get('email').dirty || form.get('email').touched)"
+          class="text-danger">
+          <div *ngIf="form.get('email').errors.required">
+            email is required.
+          </div>
+        </div>
+        <input type="text" name="email" class="form-control" formControlName="email" autocomplete="off">
+        <br>
+        <label for="address">ADDRESS</label>
+        <div *ngIf="form.get('address').errors && (form.get('address').dirty || form.get('address').touched)"
+          class="text-danger">
+          <div *ngIf="form.get('address').errors.required">
+            address is required.
+          </div>
+        </div>
+        <input type="text" name="address" class="form-control" formControlName="address" autocomplete="off">
+        <br>
+        <label for="password">PASSWORD</label>
+        <div *ngIf="form.get('password').errors && (form.get('password').dirty || form.get('password').touched)"
+          class="text-danger">
+          <div *ngIf="form.get('password').errors.required">
+            password is required.
+          </div>
+        </div>
+        <input type="password" name="password" class="form-control" formControlName="password">
+      </div>
+
+      <div class="col-md-6">
+        <label for="lastname">LAST NAME</label>
+        <div *ngIf="form.get('lastname').errors && (form.get('lastname').dirty || form.get('lastname').touched)"
+          class="text-danger">
+          <div *ngIf="form.get('lastname').errors.required">
+            last name is required.
+          </div>
+        </div>
+        <input type="text" name="lastname" class="form-control" formControlName="lastname" autocomplete="off">
+        <br>
+        <label for="phone_number">PHONE NUMBER</label>
+        <div
+          *ngIf="form.get('phone_number').errors && (form.get('phone_number').dirty || form.get('phone_number').touched)"
+          class="text-danger">
+          <div *ngIf="form.get('phone_number').errors.required">
+            phone number is required.
+          </div>
+        </div>
+        <input type="number" name="phone_number" class="form-control" formControlName="phone_number" autocomplete="off">
+        <br>
+        <label for="brief">BRIEF MEDICAL HISTORY OF PATIENT</label>
+        <br>
+        <input type="text" name="brief" class="form-control" formControlName="brief" autocomplete="off">
+        <br>
+        <label for="confirm_password">CONFIRM PASSWORD</label>
+        <div
+          *ngIf="form.get('confirm_password').errors && (form.get('confirm_password').dirty || form.get('confirm_password').touched)"
+          class="text-danger">
+          <div *ngIf="form.get('confirm_password').errors.required">
+            confirm password is required.
+          </div>
+          <div *ngIf="form.controls.confirm_password.invalid && !form.get('confirm_password').errors.required">
+            password and confirm password does not match.
+          </div>
+        </div>
+        <input type="password" name="confirm_password" class="form-control" formControlName="confirm_password">
+      </div>
+
+    </div>
+    <br>
+    <input type="submit" id="btnSubmit" value="REGISTER" class="btn btn">
+    <br>
+
+  </form>
+  <div style="margin-left: 35%;margin-top: 10px;">Already have an account? <span routerLink="/public/login">Login
+      here</span></div>
+</div>

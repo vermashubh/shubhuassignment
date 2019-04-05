@@ -1,0 +1,30 @@
+h2{
+    color:  #2dd22d;;
+}
+
+li a:active { 
+    color: #2dd22d;
+  }
+  .nav{
+    margin-right: 100px;
+}
+
+.nav-link{
+color: gray;
+}
+
+.dropdown-item{
+    color: gray;
+}
+
+.header {
+    width: 1300px;
+    height: 90px;
+    background-color: lightgreen;
+    color: white;
+}
+
+.logo{
+    height: 1%;
+    width: 1%;
+}

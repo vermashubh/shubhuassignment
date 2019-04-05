@@ -1,0 +1,31 @@
+.container{
+  margin-left: 30%;
+}
+
+.flex-container { 
+    display: flex; 
+ } 
+    
+.flex-container > div {    
+    width: 500px; 
+    margin: 10px;  
+    line-height: 15px; 
+    font-size: 15px; 
+  } 
+
+h3{
+    color: #00cc00;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  /* label{
+    color: gray;
+  } */
+
+  #btnSubmit{
+    color: white;
+    background-color: #00cc00;
+    margin-top: 37px; 
+    width: 100%;
+    }
